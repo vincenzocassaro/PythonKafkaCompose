@@ -7,11 +7,12 @@ It is a simple project composed by:
 - a Pyhton Consumer
 - a Python Producer
 
-## Key Differencies
+### Key Differencies
 
 - upgraded the infra using docker-compose 
 - switched the library used to interact with kafka, from [PyKafka](https://pykafka.readthedocs.io/en/latest/) (archived) to [kafka-python](https://kafka-python.readthedocs.io/en/master/)
 
+---
 
 ## Getting Started
 
@@ -42,8 +43,12 @@ The consumer is a Flask app that expose and endpoint on localhost:5001
 
 so open the browser and go to localhost:5001/topic/topic_test to see a stream of string coming from the topic
 
+---
+
 ## TODOs
 
-- [] Dockerize Producer
-- [] Dockerize Consumer
- 
+[ ] Dockerize Producer
+
+[ ] Dockerize Consumer
+
+[ ] Think about include https://ntfy.sh/
