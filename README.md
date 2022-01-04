@@ -45,10 +45,14 @@ so open the browser and go to localhost:5001/topic/topic_test to see a stream of
 
 ---
 
-## TODOs
+## Roadmap
 
 [ ] Dockerize Producer
 
 [ ] Dockerize Consumer
+
+[ ] Flask -> FastApi
+
+[ ] Use Poetry
 
 [ ] Think about include https://ntfy.sh/
