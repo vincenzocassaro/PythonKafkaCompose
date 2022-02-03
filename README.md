@@ -47,9 +47,9 @@ so open the browser and go to localhost:5001/topic/topic_test to see a stream of
 
 ## Roadmap
 
-[ ] Dockerize Producer
+[WIP] Dockerize Consumer
 
-[ ] Dockerize Consumer
+[ ] Dockerize Producer
 
 [ ] Flask -> FastApi
 
