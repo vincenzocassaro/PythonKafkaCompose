@@ -20,4 +20,4 @@ EXPOSE 5000
 
 WORKDIR /home/msadmin/src/
 
-ENTRYPOINT gunicorn --bind 0.0.0.0:5000 -w 4 --threads 4 wsgi:app
+ENTRYPOINT gunicorn --bind 0.0.0.0:5000 -w 1 --threads 1 wsgi:app
