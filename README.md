@@ -16,43 +16,39 @@ It is a simple project composed by:
 
 ## Getting Started
 
-1) Spin up Zookeper and Kafka
+1) Spin up Architecture (Zookeper and Kafka) and Services (Consumer and Producer)
 
 ```
 docker-compose up -d
 ```
 
-2) Setup environment
+The consumer is a Flask app that expose and endpoint on localhost:5000
 
-```
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-```
+so open the browser and go to localhost:5000/topic/test to see a stream of string coming from the topic
 
-3) Run the Producer
-```
-python producer.py
-```
+---
 
-4) Run the Consumer (in a new terminal)
-```
-python consumer.py
-```
-The consumer is a Flask app that expose and endpoint on localhost:5001
+## Known Issues
 
-so open the browser and go to localhost:5001/topic/topic_test to see a stream of string coming from the topic
+The Produces will go down a couple of times, because the Architecture is not ready yet.
+One possible solution is to use the scripts in the scripts folder to first spin up the Architecture and, once ready, spin up the services
 
 ---
 
 ## Roadmap
 
-[WIP] Dockerize Consumer
+[X] Dockerize Consumer
 
-[ ] Dockerize Producer
+[X] Dockerize Producer
+
+[ ] Use a Makefile to run startup scripts
+
+[ ] Add an external consumer and producer
 
 [ ] Flask -> FastApi
 
 [ ] Use Poetry
 
 [ ] Think about include https://ntfy.sh/
+
+[ ] Add a Spark Streaming example for fun?
