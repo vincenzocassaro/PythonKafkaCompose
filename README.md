@@ -4,7 +4,7 @@ PythonKafkaCompose is an upgrade of the amazing work done in [liveMaps](https://
 
 It is a simple project composed by:
 - an instance of Kafka
-- a Pyhton Consumer
+- a Python Consumer
 - a Python Producer
 
 ### Key Differencies
